@@ -9,7 +9,7 @@ body {
   color: #fff; /* 白文字で背景に映えるように */
 }
 .content {
-  background-color: rgba(0, 0, 0, 0.5); /* 半透明の黒背景で読みやすく */
+/*  background-color: rgba(0, 0, 0, 0.5);  半透明の黒背景で読みやすく */
   padding: 40px;
   max-width: 800px;
   margin: 100px auto;
@@ -41,6 +41,7 @@ img {
 .gallery img:hover {
   transform: scale(1.05);
 }
+
 
 
 

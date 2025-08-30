@@ -1,5 +1,6 @@
 html, body {
   height: 100%;
+  min-height: 100vh;
 }
 
 body {
@@ -12,14 +13,16 @@ body {
   font-family: 'Arial', sans-serif;
   color: #fff; /* 白文字で背景に映えるように */
 }
+
 .content {
-/*  background-color: rgba(0, 0, 0, 0.5);  半透明の黒背景で読みやすく */
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明の黒背景で読みやすく */
   padding: 40px;
   max-width: 1200px;
-  margin: 100px auto;
+  margin: 60px auto 100px auto; /* 上下の余白を調整 */
   border-radius: 12px;
   text-align: center;
 }
+
 .content p {
   text-align: left;
   white-space: pre-line;
@@ -30,16 +33,17 @@ a {
   text-decoration: none;
   font-weight: bold;
 }
+
 a:hover {
   text-decoration: underline;
 }
-
 
 img {
   margin: 10px;
   border: 3px solid #fff;
   border-radius: 8px;
 }
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -59,6 +63,3 @@ img {
 .gallery img:hover {
   transform: scale(1.05);
 }
-
-
-

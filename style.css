@@ -21,11 +21,10 @@ body {
   text-align: center;
 }
 .content p {
+  text-align: left;
   white-space: pre-line;
 }
-.content p {
-  text-align: left;
-}
+
 a {
   color: #00ffff;
   text-decoration: none;
@@ -60,5 +59,6 @@ img {
 .gallery img:hover {
   transform: scale(1.05);
 }
+
 
 

@@ -12,6 +12,7 @@ body {
   background-repeat: no-repeat;
   font-family: 'Arial', sans-serif;
   color: #fff; /* 白文字で背景に映えるように */
+  font-size: clamp(14px, 2vw, 18px);
 }
 
 .content {
@@ -79,3 +80,4 @@ img {
     margin: 30px auto 60px auto;
   }
 }
+

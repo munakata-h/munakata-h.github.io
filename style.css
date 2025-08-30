@@ -9,7 +9,7 @@ body {
   background-image: url('submarine_wallpaper.png'); /* 生成した画像のファイル名に変更 */
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   font-family: 'Arial', sans-serif;
   color: #fff; /* 白文字で背景に映えるように */
   font-size: clamp(14px, 2vw, 18px);
@@ -80,4 +80,5 @@ img {
     margin: 30px auto 60px auto;
   }
 }
+
 

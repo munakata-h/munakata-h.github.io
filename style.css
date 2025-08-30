@@ -15,7 +15,8 @@ body {
 }
 
 .content {
-  background-color: rgba(0, 0, 0, 0.5); /* 半透明の黒背景で読みやすく */
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
   padding: 40px;
   max-width: 1200px;
   margin: 60px auto 100px auto; /* 上下の余白を調整 */
@@ -63,3 +64,4 @@ img {
 .gallery img:hover {
   transform: scale(1.05);
 }
+

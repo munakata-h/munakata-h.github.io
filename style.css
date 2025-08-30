@@ -16,7 +16,9 @@ body {
   border-radius: 12px;
   text-align: center;
 }
-
+.content p {
+  white-space: pre-line;
+}
 img {
   margin: 10px;
   border: 3px solid #fff;
@@ -41,6 +43,7 @@ img {
 .gallery img:hover {
   transform: scale(1.05);
 }
+
 
 
 

@@ -14,27 +14,41 @@
 　  <h2>メモ</h2>
     <p>
 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
-10/8（水）のSB打合せでご相談したい内容を整理しましたので、ご連絡いたします。
+●インスタンス起動時に自動更新にてApacheバージョンアップされたと推測。
 
-・デモ機での確認について
-　現行の故障対応として実施しても、新機種のため現行手順がそのまま使えないと考えています。
-　ご意見いただけると助かります。
 
-・新機種（480台）について
-　故障対応の運用を継続するために、新機種に対応した手順を展開いただくことは可能でしょうか。
+〇自動更新有無の確認
+systemctl status yum-cron
+systemctl status dnf-automatic.timer
 
-・PLSアプリ／VPN証明書の配信について
-　MHRT側での実施が見積前提となっていますが、FG/BK/TBのiPad増設時と同様に、VPN証明書はMHRTで作成・提供するので、
-　SB側で配信作業を対応いただけないでしょうか。
+yum versionlock list
+→httpdがリストにあれば、バージョン固定
 
-・i-FILTERの100ライセンス追加について
-　銀行法の他業禁止に関する懸念があるため、GSとSBで直接契約できないでしょうか。
-　※現行の380ライセンスについては、別途相談させてください。
-　＜変更前＞デジタルアーツ ⇔ SB ⇔ MHRT ⇔ MHGS
-　＜変更後＞デジタルアーツ ⇔ SB ⇔ MHGS
+〇自動更新Stop
+systemctl stop yum-cron
+systemctl disable yum-cron
+yum install -y yum-plugin-versionlock
+yum versionlock httpd httpd-tools mod_ssl
 
-・BCDM（ビジネスコンシェルデバイスマネージメント）100台追加について
-　費用は現行単価と同じ条件で追加可能でしょうか。（＠xxx×100台＝￥xxxxx）
+
+●yum history undo xx　は、スペース不足で実施できない。
+
+＜対応策＞
+1. 不要なキャッシュを削除
+yum clean all
+rm -rf /var/cache/yum
+
+2. 不要なログや一時ファイルを削除
+journalctl --vacuum-time=2d
+rm -rf /tmp/*
+
+3. ディスク使用状況を確認
+df -h
+
+●yum downgrade xxxxx　は、該当パッケージなしで実施できない。
+
+＜対応策＞
+yum install xxxxx
 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
     </p>
     </section>

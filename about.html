@@ -14,41 +14,21 @@
 　  <h2>メモ</h2>
     <p>
 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
-●インスタンス起動時に自動更新にてApacheバージョンアップされたと推測。
+平素より「ペーパーレス会議システム」をご利用いただき、誠にありがとうございます。
+現在、ご契約期間の満了が近づいておりますため、今後の契約についてご確認させていただきたくご連絡いたしました。
 
+近年は Microsoft Teams などの会議ツールでも資料共有が容易に行える環境が整っており、
+お客様のご利用形態によっては、これまでのシステムを継続されないケースも見受けられます。
 
-〇自動更新有無の確認
-systemctl status yum-cron
-systemctl status dnf-automatic.timer
+つきましては、お手数ですが下記についてご確認をお願いいたします。
 
-yum versionlock list
-→httpdがリストにあれば、バージョン固定
+■ ご確認事項
+現在の「ペーパーレス会議システム」のご利用状況（利用頻度や主な用途など）
+次回契約期間（○年○月～）について、継続をご希望されるかどうか
 
-〇自動更新Stop
-systemctl stop yum-cron
-systemctl disable yum-cron
-yum install -y yum-plugin-versionlock
-yum versionlock httpd httpd-tools mod_ssl
-
-
-●yum history undo xx　は、スペース不足で実施できない。
-
-＜対応策＞
-1. 不要なキャッシュを削除
-yum clean all
-rm -rf /var/cache/yum
-
-2. 不要なログや一時ファイルを削除
-journalctl --vacuum-time=2d
-rm -rf /tmp/*
-
-3. ディスク使用状況を確認
-df -h
-
-●yum downgrade xxxxx　は、該当パッケージなしで実施できない。
-
-＜対応策＞
-yum install xxxxx
+お忙しいところ恐縮ですが、
+○月○日までにご回答いただけますと幸いです。
+      
 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
     </p>
     </section>

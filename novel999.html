@@ -3,45 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>あとがき</title>
 
   <style>
     body {
-      margin: 0;
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+      line-height: 1.0;
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 25px;
       color: #222;
-      background: #fff;
-      font-family: "Hiragino Mincho ProN", "Yu Mincho", "游明朝", serif;
-      font-size: 17px;
-      line-height: 2;
-    }
-
-    main {
-      box-sizing: border-box;
-      width: min(90%, 760px);
-      margin: 0 auto;
-      padding: 4em 0;
+      background-color: #fff;
     }
 
     h1 {
-      margin: 0 0 2em;
-      font-size: 1.35em;
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 60px;
       font-weight: normal;
-      text-align: center;
     }
 
-    p {
-      margin: 0 0 1.5em;
+    .novel {
+      white-space: pre-wrap;
+      font-size: 1em;
+      font-weight: bold;
     }
 
-    .return-link {
-      margin-top: 4em;
+    .back {
       text-align: center;
+      margin-top: 80px;
+      padding-top: 30px;
+      border-top: 1px solid #ddd;
     }
 
     a {
-      color: #222;
+      color: #555;
+      text-decoration: none;
     }
 
+    /* 警告画面はそのまま残す */
     .warning-screen {
       position: fixed;
       z-index: 9999;
@@ -77,24 +78,27 @@
 </head>
 
 <body>
- <div id="warningScreen" class="warning-screen" role="alert" aria-live="assertive">
-   <p class="warning-title">警告！</p>
-   <p class="warning-message">
-この端末を乗っ取りました！<br>
-資産情報を確認しています……</p>
+
+  <!-- 警告画面（残す） -->
+  <div id="warningScreen" class="warning-screen" role="alert" aria-live="assertive">
+    <p class="warning-title">警告！</p>
+    <p class="warning-message">
+      この端末を乗っ取りました！<br>
+      資産情報を確認しています……
+    </p>
   </div>
 
-<main id="afterword" hidden>
- <h1>あとがき</h1>
-<p>
-  安心してください。<br>
-  この端末は乗っ取っていません。<br>
+  <!-- 本文（novel101.html と同じ構造に変更） -->
+  <main id="afterword" hidden>
+    <h1>あとがき</h1>
 
-  ただし、安易にクリックすると、<br>
-  金融崩壊するかもしれませんよ。
-</p>
-<p>
-  
+    <div class="novel">
+安心してください。<br>
+この端末は乗っ取っていません。<br><br>
+
+ただし、安易にクリックすると、<br>
+金融崩壊するかもしれませんよ。<br><br>
+
 この物語は、たった一つのクリックから始まり、
 やがて金融システムそのものが揺らいでいく世界を描きました。
 
@@ -139,18 +143,18 @@ AIだけとは限りません。
 
 最後までお読みいただき、
 ありがとうございました。
-</p>
+    </div>
 
-    <p class="return-link">
+    <div class="back">
       <a href="novel105.html">―　本文へ戻る　―</a>
-    </p>
+    </div>
   </main>
 
   <noscript>
     <main>
       <h1>あとがき</h1>
       <p>安心してください。<br>安易にクリックすると、金融崩壊するかもしれませんよ。</p>
-      <p class="return-link"><a href="novel105.html">―　本文へ戻る　―</a></p>
+      <p class="back"><a href="novel105.html">―　本文へ戻る　―</a></p>
     </main>
   </noscript>
 
@@ -160,5 +164,6 @@ AIだけとは限りません。
       document.getElementById('afterword').hidden = false;
     }, 9000);
   </script>
+
 </body>
 </html>

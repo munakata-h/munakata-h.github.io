@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>あとがき</title>
+
+  <style>
+    body {
+      margin: 0;
+      color: #222;
+      background: #fff;
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", "游明朝", serif;
+      font-size: 17px;
+      line-height: 2;
+    }
+
+    main {
+      box-sizing: border-box;
+      width: min(90%, 760px);
+      margin: 0 auto;
+      padding: 4em 0;
+    }
+
+    h1 {
+      margin: 0 0 2em;
+      font-size: 1.35em;
+      font-weight: normal;
+      text-align: center;
+    }
+
+    p {
+      margin: 0 0 1.5em;
+    }
+
+    .return-link {
+      margin-top: 4em;
+      text-align: center;
+    }
+
+    a {
+      color: #222;
+    }
+
+    .warning-screen {
+      position: fixed;
+      z-index: 9999;
+      inset: 0;
+      display: grid;
+      place-content: center;
+      box-sizing: border-box;
+      padding: 2rem;
+      color: #fff;
+      background: #d40000;
+      text-align: center;
+    }
+
+    .warning-title {
+      margin: 0 0 0.5em;
+      font-family: sans-serif;
+      font-size: clamp(2.8rem, 10vw, 6rem);
+      font-weight: bold;
+      letter-spacing: 0.08em;
+    }
+
+    .warning-message {
+      margin: 0;
+      font-size: clamp(1.3rem, 4vw, 2rem);
+      font-weight: bold;
+      line-height: 1.7;
+    }
+
+    [hidden] {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="warningScreen" class="warning-screen" role="alert" aria-live="assertive">
+    <p class="warning-title">ＷＡＲＮＩＮＧ</p>
+    <p class="warning-message">この端末を乗っ取りました！</p>
+  </div>
+
+  <main id="afterword" hidden>
+    <h1>あとがき</h1>
+
+    <p>
+      安心してください。<br>
+      安易にクリックすると、金融崩壊するかもしれませんよ。
+    </p>
+
+    <p>
+      最後までお読みいただき、ありがとうございました。
+    </p>
+
+    <p>
+      この作品は、便利な技術や仕組みを安易に信じ切ったとき、
+      何が起こり得るのかを考えて書きました。
+    </p>
+
+    <p class="return-link">
+      <a href="novel105.html">―　本文へ戻る　―</a>
+    </p>
+  </main>
+
+  <noscript>
+    <main>
+      <h1>あとがき</h1>
+      <p>安心してください。<br>安易にクリックすると、金融崩壊するかもしれませんよ。</p>
+      <p class="return-link"><a href="novel105.html">―　本文へ戻る　―</a></p>
+    </main>
+  </noscript>
+
+  <script>
+    window.setTimeout(() => {
+      document.getElementById('warningScreen').hidden = true;
+      document.getElementById('afterword').hidden = false;
+    }, 1800);
+  </script>
+</body>
+</html>

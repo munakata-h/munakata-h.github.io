@@ -78,17 +78,24 @@
 
 <body>
   <div id="warningScreen" class="warning-screen" role="alert" aria-live="assertive">
-    <p class="warning-title">ＷＡＲＮＩＮＧ</p>
-    <p class="warning-message">この端末を乗っ取りました！</p>
+    <p class="warning-title">警告！</p>
+    <p class="warning-message">
+      この端末を乗っ取りました！<br>
+  　　資産情報を確認しています……</p>
   </div>
 
   <main id="afterword" hidden>
     <h1>あとがき</h1>
 
     <p>
-      安心してください。<br>
-      安易にクリックすると、金融崩壊するかもしれませんよ。
-    </p>
+  安心してください。<br>
+  この端末は乗っ取っていません。
+</p>
+
+<p>
+  ただし、安易にクリックすると、<br>
+  金融崩壊するかもしれませんよ。
+</p>
 
     <p>
       最後までお読みいただき、ありがとうございました。
@@ -116,7 +123,7 @@
     window.setTimeout(() => {
       document.getElementById('warningScreen').hidden = true;
       document.getElementById('afterword').hidden = false;
-    }, 1800);
+    }, 5000);
   </script>
 </body>
 </html>

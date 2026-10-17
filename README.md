@@ -4,6 +4,7 @@ munakata-h.github.io/
 　　　　"https://munakata-h.github.io/rika-chan/"  
 ├── novel.html   ← ★★★ 小説の部屋 ★★★  
 ├── game.html    ← ★★★ ゲームの部屋 ★★★  
+├── about.html   ← 
 
 
 ★★★ 小説の部屋 ★★★  

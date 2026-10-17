@@ -1,4 +1,5 @@
 ★★★ 小説の部屋 ★★★
+
 munakata-h.github.io/
 ├── 
 作者：munakata
@@ -6,6 +7,7 @@ munakata-h.github.io/
 作者が企画・構成・人物設定・推敲・編集を行って制作しています。
 
 ★★★ ゲームの部屋 ★★★
+
 munakata-h.github.io/
 ├── index.html   ← トップページ
 ├── game.html    ← ★★★ ゲームの部屋 ★★★（これを編集すれば更新できる）

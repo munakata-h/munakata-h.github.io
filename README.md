@@ -2,11 +2,11 @@ munakata-h.github.io/
 ├── index.html   ← トップページ  
 　　└── rika-chan　　← Rika-chanギャラリーを見る  
 　　　　"https://munakata-h.github.io/rika-chan/"  
-├── novel.html   ← ★★★ 小説の部屋 ★★★ 
-|
-├── game.html    ← ★★★ ゲームの部屋 ★★★ 
-　　└── main01.html  ← ゲーム本体  
-　　　　"https://munakata-h.github.io/html-game/main01.html"
+├── novel.html   ← ★★★ 小説の部屋 ★★★  
+|  
+├── game.html    ← ★★★ ゲームの部屋 ★★★  
+　　└── main01.html  ← ゲーム本体   
+　　　　"https://munakata-h.github.io/html-game/main01.html"  
 ├── about.html   ← このサイトについて
 
 
